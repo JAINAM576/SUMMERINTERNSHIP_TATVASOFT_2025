@@ -1,27 +1,90 @@
-# ANGULARPROJECT
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.20.
+# Angular Project - Day 2
 
-## Development server
+## 📚 What is Angular?
+**Angular** is a front-end framework developed by **Google** for building fast, dynamic, and scalable **Single Page Applications (SPA).**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## ✅ What I Learned
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 📖 Angular Basics
+- Learned what Angular is, how it works, and how it supports Single Page Applications through components.
+- Understood Angular's component-based architecture and routing system.
 
-## Build
+### 🛠️ Setup and Installation
+- Installed Angular CLI using:
+  ```bash
+  npm install -g @angular/cli@1
+  ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* Verified installation using:
 
-## Running unit tests
+  ```bash
+  ng version
+  ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 🚀 Project Creation and Running
 
-## Running end-to-end tests
+* Created a new Angular project using:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+  ```bash
+  ng new ANGULAR_PROJECT
+  ```
+* Ran the project using:
 
-## Further help
+  ```bash
+  ng serve
+  ```
+* Successfully accessed the project on `localhost:4200`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 🔍 Key Concepts Covered
+
+* Component creation and rendering flow.
+* Routing configuration to render different components.
+* Integrated **Bootstrap** for UI styling.
+* Used important Angular directives and modules:
+
+  * `*ngIf`, `*ngFor`, `ngClass`, `ngModule`, and `FormsModule`.
+
+### 📝 My Practice Project
+
+* Built a **To-Do List** application using the concepts learned.
+* Explored:
+
+  * Lifecycle hooks: `OnInit` and `ngOnInit` to load data from **Local Storage** initially.
+  * Local Storage for task persistence.
+* The To-Do List supports adding, displaying, and deleting tasks using core Angular functionalities.
+
+---
+
+## 🗂️ Project Structure
+
+```
+ANGULAR_PROJECT/
+├── README.md
+├── angular.json
+├── package.json
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.spec.json
+├── .editorconfig
+└── src/
+    ├── index.html
+    ├── main.ts
+    ├── styles.css
+    ├── app/
+    │   ├── app.component.html
+    │   ├── app.component.spec.ts
+    │   ├── app.component.ts
+    │   ├── app.config.ts
+    │   └── app.routes.ts
+    └── component/
+        ├── form.component.ts
+        ├── home.component.ts
+        ├── todo.component.ts
+        └── html/
+            └── form.component.html
+```
+
+
