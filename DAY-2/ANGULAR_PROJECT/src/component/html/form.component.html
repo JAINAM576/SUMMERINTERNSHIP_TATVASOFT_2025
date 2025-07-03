@@ -1,0 +1,27 @@
+// INLINE SCRIPT WILL NOT WORK
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ <form id="submit">
+<label for="name">Enter Your name</label>
+    <input id="name" type="text"/> 
+    </form>
+
+
+</body>
+    <script>
+        console.log("SCRIPT RUNNING")
+let sub=document.getElementById("submit");
+sub.addEventListener("submit",(e)=>{
+e.preventDefualt();
+console.log(document.getElementById("name").value);
+})
+    </script>
+</html>
